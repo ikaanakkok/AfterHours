@@ -47,7 +47,7 @@ export const workflowSchema = z
               .regex(/^[a-zA-Z][a-zA-Z0-9_]*$/)
               .refine(
                 (key) => key !== 'reference',
-                'İşlem referansı platform tarafından belirlenir.',
+                'The operation reference is assigned by the platform.',
               ),
             label: z.string().min(1).max(100),
             required: z.boolean(),
@@ -58,7 +58,7 @@ export const workflowSchema = z
       .max(30)
       .refine(
         (inputs) => new Set(inputs.map((input) => input.key)).size === inputs.length,
-        'Girdi adları benzersiz olmalı.',
+        'Input names must be unique.',
       ),
     steps: z
       .array(
@@ -120,10 +120,10 @@ export const defaultConfig = (name: string): BusinessConfig => ({
   businessName: name,
   description: '',
   timezone: 'Europe/Istanbul',
-  language: 'Türkçe',
-  tone: 'Kısa, doğal ve yardımsever',
-  automationEnabled: false,
-  activeHours: [],
+  language: 'Turkish',
+  tone: 'Short, natural and helpful',
+  automationEnabled: true,
+  activeHours: [0, 1, 2, 3, 4, 5, 6].map((day) => ({ day, start: '00:00', end: '24:00' })),
   knowledge: [],
   requireApproval: ['email.send', 'payment.link', 'calendar.cancel'],
   paymentsEnabled: false,
@@ -171,13 +171,13 @@ export function authorizeConnection(
     throw new HttpError(
       409,
       'CONNECTION_NOT_READY',
-      'Bağlantının kurulum ve doğrulaması tamamlanmalı.',
+      'The connection setup and verification must be completed.',
     );
   if (!conn.agents.includes(actor.type) || !conn.permissions.includes(capability))
     throw new HttpError(
       403,
       'CAPABILITY_DENIED',
-      'Bu ajan ve bağlantı için gerekli işlem izni verilmemiş.',
+      'The required capability has not been granted for this agent and connection.',
     );
 }
 export function validateWorkflowInputs(def: WorkflowDefinition, inputs: Record<string, unknown>) {
@@ -186,14 +186,14 @@ export function validateWorkflowInputs(def: WorkflowDefinition, inputs: Record<s
     throw new HttpError(
       400,
       'UNKNOWN_WORKFLOW_INPUT',
-      'Yalnızca işin tanımlanmış girdileri kullanılabilir.',
+      'Only the inputs defined for the operation may be used.',
     );
   for (const spec of def.inputs)
     if (spec.required && (typeof inputs[spec.key] !== 'string' || !String(inputs[spec.key]).trim()))
       throw new HttpError(400, 'MISSING_INPUT', `${spec.label} bilgisi gerekiyor.`);
   for (const value of Object.values(inputs))
     if (typeof value !== 'string' && typeof value !== 'number' && typeof value !== 'boolean')
-      throw new HttpError(400, 'INVALID_INPUT', 'İş girdileri basit metin veya sayılar olmalı.');
+      throw new HttpError(400, 'INVALID_INPUT', 'Operation inputs must be simple text or numbers.');
   return Object.fromEntries(
     Object.entries(inputs).map(([key, value]) => [
       key,
@@ -211,7 +211,7 @@ export function financialTerms(
     record.amount <= 0 ||
     !/^[a-z]{3}$/.test(record.currency)
   )
-    throw new HttpError(409, 'UNVERIFIED_AMOUNT', 'Doğrulanmış tutar ve para birimi gerekiyor.');
+    throw new HttpError(409, 'UNVERIFIED_AMOUNT', 'A verified amount and currency are required.');
   if (
     Object.keys(input).some((k) =>
       [
@@ -228,7 +228,7 @@ export function financialTerms(
     throw new HttpError(
       403,
       'UNTRUSTED_FINANCIAL_INPUT',
-      'Ödeme bilgileri yalnızca doğrulanmış işletme kaydından alınabilir.',
+      'Payment details may only come from a verified business record.',
     );
   return { amount: record.amount, currency: record.currency };
 }

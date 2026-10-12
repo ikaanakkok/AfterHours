@@ -140,7 +140,7 @@ export async function readConnectionSnapshot(tenantId: string, connectionId: str
     const connection = (
       await db.select().from(connections).where(eq(connections.id, connectionId)).for('update')
     )[0];
-    if (!connection) throw new HttpError(404, 'NOT_FOUND', 'Bağlantı bu işletmede bulunamadı.');
+    if (!connection) throw new HttpError(404, 'NOT_FOUND', 'Connection not found for this business.');
     const secret = (
       await db.select().from(secrets).where(eq(secrets.connectionId, connectionId)).for('share')
     )[0];

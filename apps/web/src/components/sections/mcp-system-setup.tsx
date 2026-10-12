@@ -87,8 +87,8 @@ export function McpSystemSetup({
         disabled={!!busy}
         onChange={(event) => setAuthMode(event.target.value)}
       >
-        <option value="bearer">Token · or no authentication</option>
         <option value="oauth">OAuth · Sign in with my account</option>
+        <option value="bearer">Token · or no authentication</option>
       </Select>
       {authMode === 'oauth' && (
         <Notice>

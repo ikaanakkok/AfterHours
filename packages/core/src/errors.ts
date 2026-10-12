@@ -9,7 +9,7 @@ export class HttpError extends Error {
 }
 export class OutcomeUnknown extends Error {
   constructor(
-    message = 'İşlemin dış sistemdeki sonucu doğrulanamadı. Yeniden çalıştırmadan önce inceleme gerekiyor.',
+    message = 'The outcome of the operation in the external system could not be verified. Review it before running it again.',
   ) {
     super(message);
   }
@@ -19,6 +19,6 @@ export const requireAdmin = (role: string | null) => {
     throw new HttpError(
       403,
       'ADMIN_REQUIRED',
-      'Bu işlem için işletme yöneticisi yetkisi gerekiyor.',
+      'This action requires business administrator permission.',
     );
 };

@@ -3,11 +3,11 @@ import { CronExpressionParser } from 'cron-parser';
 export const DEFAULT_TIMEZONE = 'Europe/Istanbul';
 
 export function validateTimezone(timezone: string): string {
-  if (!timezone || timezone.length > 100) throw new Error('Geçerli bir saat dilimi seçin.');
+  if (!timezone || timezone.length > 100) throw new Error('Select a valid timezone.');
   try {
     new Intl.DateTimeFormat('en', { timeZone: timezone }).format(new Date());
   } catch {
-    throw new Error('Saat dilimi tanınmıyor. Örnek: Europe/Istanbul.');
+    throw new Error('Unrecognized timezone. Example: Europe/Istanbul.');
   }
   return timezone;
 }
@@ -17,12 +17,12 @@ export function validateCron(expression: string, timezone = DEFAULT_TIMEZONE): v
   // Minute resolution keeps jobs appropriate for a local business workstation.
   // Five-field syntax also makes the schedule shown in the panel unambiguous.
   if (expression.trim().split(/\s+/).length !== 5 || expression.length > 150) {
-    throw new Error('Takvim beş alan içermeli: dakika saat gün ay haftanın-günü.');
+    throw new Error('The schedule must have five fields: minute hour day month weekday.');
   }
   try {
     CronExpressionParser.parse(expression, { tz: timezone, currentDate: new Date() }).next();
   } catch {
-    throw new Error('Cron takvimi geçersiz veya gelecekte bir çalışma zamanı yok.');
+    throw new Error('The cron schedule is invalid or has no future run time.');
   }
 }
 
@@ -32,7 +32,7 @@ export function nextRunAt(
   after = new Date(),
 ): Date {
   validateCron(expression, timezone);
-  if (!Number.isFinite(after.getTime())) throw new Error('Geçerli bir başlangıç zamanı gerekli.');
+  if (!Number.isFinite(after.getTime())) throw new Error('A valid start time is required.');
   return CronExpressionParser.parse(expression, { tz: timezone, currentDate: after })
     .next()
     .toDate();

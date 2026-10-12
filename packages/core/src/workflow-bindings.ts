@@ -16,10 +16,10 @@ export function resolveWorkflowSystems(
         ) && step.toLocaleLowerCase('tr').includes(c.name.toLocaleLowerCase('tr')),
     );
     if (matching.length > 1)
-      errors.push(`“${step.slice(0, 100)}” birden fazla sisteme uyuyor; sistem ismini açık yazın.`);
+      errors.push(`“${step.slice(0, 100)}” matches more than one system; write the system name explicitly.`);
     else if (matching[0] && !systems.includes(matching[0].id)) systems.push(matching[0].id);
   }
   if (!systems.length)
-    errors.push('Metinde kayıtlı bir Backoffice sistemi veya kanal ismini belirtin.');
+    errors.push('Name a saved Backoffice system or channel in the text.');
   return { systemIds: systems, error: errors.join(' ') || null };
 }

@@ -91,7 +91,7 @@ export async function handleChannelSetupCommand(
       ]),
       name: z.string().trim().min(1).max(120),
       purpose: z.string().trim().min(1).max(8000),
-      customerReplies: z.boolean().default(false),
+      customerReplies: z.boolean().optional(),
       emailSend: z.boolean().default(false),
       calendarWrite: z.boolean().default(false),
       calendarId: z.string().trim().min(1).max(300).optional(),
@@ -99,6 +99,7 @@ export async function handleChannelSetupCommand(
     .strict()
     .parse(payload);
   const id = p.id ?? randomUUID();
+  const customerReplies = p.customerReplies ?? p.kind === 'whatsapp';
   await tenantDb(ctx.tenantId, async (db) => {
     await db.execute(
       sql`select pg_advisory_xact_lock(hashtextextended(${ctx.tenantId + ':channel-setup'},0))`,
@@ -128,12 +129,12 @@ export async function handleChannelSetupCommand(
           : calendar
             ? ['calendar.read', ...(p.calendarWrite ? ['calendar.create'] : [])]
             : [];
-    const agents = ['admin', ...(p.customerReplies && !unsupported ? ['customer'] : [])];
+    const agents = ['admin', ...(customerReplies && !unsupported ? ['customer'] : [])];
     const revision = Number(old?.config.setupRevision ?? 0) + 1;
     const config = {
       guidedSetup: true,
       setupRevision: revision,
-      customerReplies: p.customerReplies,
+      customerReplies,
       emailSend: email && p.emailSend,
       calendarWrite: calendar && p.calendarWrite,
       ...(calendar ? { calendarId: p.calendarId ?? 'primary' } : {}),
