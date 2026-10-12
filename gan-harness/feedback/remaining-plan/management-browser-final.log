@@ -1,0 +1,22 @@
+Viewport set to 1440x900
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/agent-operations) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/management (200)
+{"pass":true,"path":"/management","viewport":1440,"realMutations":false,"commands":["proposal.apply"]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/management-desktop.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/management) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Viewport set to 390x844
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/management) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/management (200)
+{"pass":true,"path":"/management","viewport":390,"realMutations":false,"commands":["proposal.apply"]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/management-mobile.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/management) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---

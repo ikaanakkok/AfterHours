@@ -1,0 +1,10 @@
+node_modules
+.data
+.next
+out
+build
+coverage
+pnpm-lock.yaml
+.env
+.env.*
+next-env.d.ts

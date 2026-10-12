@@ -1,0 +1,29 @@
+[
+  {
+    "journey": "inbox",
+    "result": {
+      "pass": true,
+      "realMutations": false,
+      "assertions": [
+        "selection after reorder",
+        "A delayed send preserves B draft",
+        "newer A draft retained",
+        "mobile list back and customer selection"
+      ]
+    },
+    "pass": true
+  },
+  {
+    "journey": "tenant-switch",
+    "result": {
+      "pass": true,
+      "realMutations": false,
+      "assertions": [
+        "tenant switch clears drafts",
+        "late A response ignored",
+        "B payload has only B change"
+      ]
+    },
+    "pass": true
+  }
+]

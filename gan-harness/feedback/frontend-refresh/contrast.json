@@ -1,0 +1,44 @@
+[
+  {
+    "token": "ink",
+    "foreground": "#202020",
+    "background": "#ffffff",
+    "contrast": 16.29
+  },
+  {
+    "token": "muted",
+    "foreground": "#646464",
+    "background": "#f8f9fa",
+    "contrast": 5.61
+  },
+  {
+    "token": "accent",
+    "foreground": "#6647f0",
+    "background": "#f0ecff",
+    "contrast": 4.87
+  },
+  {
+    "token": "green",
+    "foreground": "#176344",
+    "background": "#e9f6ef",
+    "contrast": 6.5
+  },
+  {
+    "token": "red",
+    "foreground": "#a52b37",
+    "background": "#fff0f2",
+    "contrast": 6.33
+  },
+  {
+    "token": "amber",
+    "foreground": "#8a4b0f",
+    "background": "#fff4e5",
+    "contrast": 6.25
+  },
+  {
+    "token": "blue",
+    "foreground": "#245b91",
+    "background": "#edf5ff",
+    "contrast": 6.41
+  }
+]

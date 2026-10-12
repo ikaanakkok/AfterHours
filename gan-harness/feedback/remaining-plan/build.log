@@ -1,0 +1,43 @@
+
+> afterhours@0.1.0 build /private/tmp/afterhours-plan-verify
+> pnpm --filter @afterhours/web build
+
+
+> @afterhours/web@0.1.0 build /private/tmp/afterhours-plan-verify/apps/web
+> next build --webpack
+
+▲ Next.js 16.4.0 (webpack)
+✓ Running next.config.ts took 153ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.3s
+  Running TypeScript ...
+  Finished TypeScript in 2.4s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/9) ...
+  Generating static pages using 7 workers (2/9) 
+  Generating static pages using 7 workers (4/9) 
+  Generating static pages using 7 workers (6/9) 
+✓ Generating static pages using 7 workers (9/9) in 492ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /[section]
+├ ƒ /api/auth/[...all]
+├ ƒ /api/channels/oauth/callback
+├ ƒ /api/channels/whatsapp/qr
+├ ƒ /api/command
+├ ƒ /api/context/download
+├ ƒ /api/context/upload
+├ ƒ /api/tenant
+├ ƒ /api/webhooks/stripe/[tenantId]/[connectionId]
+├ ƒ /api/workspace
+└ ○ /login
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

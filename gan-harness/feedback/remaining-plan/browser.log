@@ -1,0 +1,82 @@
+Viewport set to 1440x900
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/management) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/management (200)
+{"pass":true,"path":"/management","viewport":1440,"realMutations":false,"commands":["proposal.apply"]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/management-desktop.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/management) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/management) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/email (200)
+{"pass":true,"path":"/email","viewport":1440,"realMutations":false,"commands":["connection.update"]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/email-desktop.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/email) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/email) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/calendar (200)
+{"pass":true,"path":"/calendar","viewport":1440,"realMutations":false,"commands":["connection.update"]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/calendar-desktop.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/calendar) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/calendar) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/agent-operations (200)
+{"pass":true,"path":"/agent-operations","viewport":1440,"realMutations":false,"commands":[]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/agent-operations-desktop.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/agent-operations) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Viewport set to 390x844
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/agent-operations) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/management (200)
+{"pass":true,"path":"/management","viewport":390,"realMutations":false,"commands":["proposal.apply"]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/management-mobile.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/management) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/management) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/email (200)
+{"pass":true,"path":"/email","viewport":390,"realMutations":false,"commands":["connection.update"]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/email-mobile.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/email) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/email) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/calendar (200)
+{"pass":true,"path":"/calendar","viewport":390,"realMutations":false,"commands":["connection.update"]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/calendar-mobile.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/calendar) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/calendar) ---
+Console buffer cleared.
+--- END UNTRUSTED EXTERNAL CONTENT ---
+Navigated to http://127.0.0.1:3003/agent-operations (200)
+{"pass":true,"path":"/agent-operations","viewport":390,"realMutations":false,"commands":[]}
+true
+Screenshot saved: /private/tmp/afterhours-plan-qa/agent-operations-mobile.png
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:3003/agent-operations) ---
+(no console errors)
+--- END UNTRUSTED EXTERNAL CONTENT ---

@@ -1,0 +1,27 @@
+[
+  {
+    "journey": "settings-desktop",
+    "pass": true,
+    "result": "{\"pass\":true,\"realMutations\":false,\"commandCount\":1,\"assertions\":[\"Version refresh preserves draft/focus\",\"Explicit reload uses latest settings\",\"Failed command retains form and shows inline error\",\"Double submit is blocked\",\"Mobile drawer focus, Escape and inert background\"]}"
+  },
+  {
+    "journey": "settings-mobile",
+    "pass": true,
+    "result": "{\"pass\":true,\"realMutations\":false,\"commandCount\":1,\"assertions\":[\"Version refresh preserves draft/focus\",\"Explicit reload uses latest settings\",\"Failed command retains form and shows inline error\",\"Double submit is blocked\",\"Mobile drawer focus, Escape and inert background\"]}"
+  },
+  {
+    "journey": "context",
+    "pass": true,
+    "result": "{\"pass\":true,\"assertions\":[\"Documents and Questions separated\",\"Unanswered badge 2→1→2 after answer/new document\",\"Tenant bound answer and document commands\"],\"realMutations\":false}"
+  },
+  {
+    "journey": "workflow-questions",
+    "pass": true,
+    "result": "{\n  \"passed\": true,\n  \"environment\": \"controlled UI responses\",\n  \"assertions\": [\n    \"Questions separate tab\",\n    \"badge 2 -> 1 -> 2\",\n    \"answer revision + tenant\",\n    \"other answer draft retained\",\n    \"test and activation blocked\"\n  ],\n  \"commands\": [\n    \"workflow.questions.answer\"\n  ]\n}"
+  },
+  {
+    "journey": "guided-channels",
+    "pass": true,
+    "result": "{\n  \"passed\": true,\n  \"environment\": \"controlled QR and workspace responses\",\n  \"assertions\": [\n    \"service-specific instructions\",\n    \"no JSON/token forms\",\n    \"QR PNG rendered directly\",\n    \"QR expires\",\n    \"connected QR hidden\",\n    \"explicit tenant binding\",\n    \"calendar guided default\"\n  ]\n}"
+  }
+]

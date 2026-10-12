@@ -1,0 +1,6 @@
+
+> afterhours@0.1.0 format:check /private/tmp/afterhours-plan-verify
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!

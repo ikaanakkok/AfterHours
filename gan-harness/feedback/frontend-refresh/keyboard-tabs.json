@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/context",
+    "pass": true
+  },
+  {
+    "path": "/agent-operations",
+    "pass": true
+  }
+]

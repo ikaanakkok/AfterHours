@@ -1,0 +1,11 @@
+ALTER TABLE memberships ADD CONSTRAINT membership_role CHECK (role IN ('admin','staff'));
+ALTER TABLE connections ADD CONSTRAINT connection_state CHECK (status IN ('setup','missing_info','awaiting_test','ready','needs_attention','disabled'));
+ALTER TABLE operations ADD CONSTRAINT operation_state CHECK (status IN ('queued','awaiting_approval','running','verifying','succeeded','failed','needs_attention'));
+ALTER TABLE conversations ADD CONSTRAINT conversation_mode CHECK (mode IN ('ai','human'));
+ALTER TABLE configurations ADD CONSTRAINT configuration_version CHECK (version > 0);
+ALTER TABLE payment_records ADD CONSTRAINT positive_payment_amount CHECK (amount > 0);
+CREATE INDEX messages_conversation_time ON messages(tenant_id,conversation_id,created_at);
+CREATE INDEX messages_pending ON messages(tenant_id,status,available_at);
+CREATE INDEX operations_status ON operations(tenant_id,status,created_at);
+CREATE INDEX audit_event_time ON audit(tenant_id,event,created_at);
+CREATE INDEX cron_due ON cron_jobs(tenant_id,enabled,next_run_at);

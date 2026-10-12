@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-12",
+  "environment": "local demo database, independent snapshot",
+  "productionBuild": "pass, frozen frontend assets",
+  "lint": "pass",
+  "typecheck": "pass after core/test snapshot refresh",
+  "frontendFormatting": "pass",
+  "initialBehavioralRun": {
+    "passed": 142,
+    "failed": 7,
+    "total": 149,
+    "filesPassed": 13,
+    "filesFailed": 2
+  },
+  "latestBehavioralRun": {
+    "passed": 169,
+    "failed": 19,
+    "total": 188,
+    "filesPassed": 18,
+    "filesFailed": 4,
+    "seconds": 177.94,
+    "failedFiles": [
+      "foundation.test.ts",
+      "workflow-approval.test.ts",
+      "whatsapp-worker.test.ts",
+      "workflow-pause.test.ts"
+    ]
+  },
+  "integrationOwner": "Planı gözden geçir chat performs serial final integrated suite",
+  "frontendReview": "manual no blocking findings in workspace/settings/ui/Inbox",
+  "realAccountVerification": false,
+  "supersedingIntegratedCheckpoint": {
+    "verifiedBy": "backend integration chat",
+    "evidence": "../feedback-remaining-plan.md",
+    "tests": {
+      "files": 23,
+      "passed": 199,
+      "failed": 0
+    },
+    "lint": "pass",
+    "typecheck": "pass",
+    "build": "pass",
+    "format": "pass",
+    "codeReview": "approve",
+    "typescriptReview": "approve",
+    "reactReview": "approve",
+    "securityReview": "pass",
+    "additionalBrowserJourneys": 8,
+    "preview": "http://127.0.0.1:3003",
+    "excludes": "later requested MCP OAuth",
+    "frontendChatVerification": "inspected integration report and test/typecheck/format logs"
+  }
+}

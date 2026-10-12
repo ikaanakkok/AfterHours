@@ -1,0 +1,50 @@
+[
+  {
+    "path": "/login",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif"
+  },
+  {
+    "path": "/login",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif"
+  },
+  {
+    "path": "/login",
+    "width": 768,
+    "bodyWidth": 768,
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif"
+  },
+  {
+    "path": "/login",
+    "width": 390,
+    "bodyWidth": 390,
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif"
+  },
+  {
+    "path": "/frontend-missing-page",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif"
+  },
+  {
+    "path": "/frontend-missing-page",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif"
+  },
+  {
+    "path": "/frontend-missing-page",
+    "width": 768,
+    "bodyWidth": 768,
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif"
+  },
+  {
+    "path": "/frontend-missing-page",
+    "width": 390,
+    "bodyWidth": 390,
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif"
+  }
+]

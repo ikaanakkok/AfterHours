@@ -1,0 +1,13 @@
+
+> afterhours@0.1.0 test /private/tmp/afterhours-plan-verify
+> vitest run
+
+
+ RUN  v5.0.3 /private/tmp/afterhours-plan-verify
+
+
+ Test Files  23 passed (23)
+      Tests  199 passed (199)
+   Start at  14:59:55
+   Duration  57.22s (tests 77%, import 21%, transform 2%)
+

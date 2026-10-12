@@ -1,0 +1,11 @@
+CREATE TABLE context_corpora (tenant_id uuid PRIMARY KEY REFERENCES tenants(id), version integer NOT NULL DEFAULT 0, analyzed_version integer, status text NOT NULL DEFAULT 'empty', error text, analysis_token uuid, updated_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE context_attachments (tenant_id uuid NOT NULL REFERENCES tenants(id), id uuid NOT NULL DEFAULT gen_random_uuid(), title text NOT NULL, kind text NOT NULL CHECK(kind IN ('text','link','image','pdf','pptx','docx')), status text NOT NULL DEFAULT 'awaiting_provider', summary text, error text, url text, mime text, extracted_text text NOT NULL DEFAULT '', file_data text, created_at timestamptz NOT NULL DEFAULT now(), PRIMARY KEY(tenant_id,id));
+CREATE TABLE context_questions (tenant_id uuid NOT NULL REFERENCES context_corpora(tenant_id) ON DELETE CASCADE, id uuid NOT NULL DEFAULT gen_random_uuid(), fingerprint text NOT NULL, prompt text NOT NULL, reason text NOT NULL, source_ids jsonb NOT NULL, status text NOT NULL DEFAULT 'open' CHECK(status IN ('open','answered')), answer text, corpus_version integer NOT NULL, created_at timestamptz NOT NULL DEFAULT now(), PRIMARY KEY(tenant_id,id));
+CREATE INDEX context_questions_open ON context_questions(tenant_id,status,corpus_version);
+ALTER TABLE context_corpora ENABLE ROW LEVEL SECURITY; ALTER TABLE context_corpora FORCE ROW LEVEL SECURITY;
+ALTER TABLE context_attachments ENABLE ROW LEVEL SECURITY; ALTER TABLE context_attachments FORCE ROW LEVEL SECURITY;
+ALTER TABLE context_questions ENABLE ROW LEVEL SECURITY; ALTER TABLE context_questions FORCE ROW LEVEL SECURITY;
+CREATE POLICY tenant_scope ON context_corpora TO afterhours_app USING(tenant_id::text=current_setting('app.tenant_id',true)) WITH CHECK(tenant_id::text=current_setting('app.tenant_id',true));
+CREATE POLICY tenant_scope ON context_attachments TO afterhours_app USING(tenant_id::text=current_setting('app.tenant_id',true)) WITH CHECK(tenant_id::text=current_setting('app.tenant_id',true));
+CREATE POLICY tenant_scope ON context_questions TO afterhours_app USING(tenant_id::text=current_setting('app.tenant_id',true)) WITH CHECK(tenant_id::text=current_setting('app.tenant_id',true));
+GRANT SELECT,INSERT,UPDATE,DELETE ON context_corpora,context_attachments,context_questions TO afterhours_app;

@@ -1,0 +1,11 @@
+ALTER TABLE workflows ALTER COLUMN connection_id DROP NOT NULL;
+ALTER TABLE workflows ADD COLUMN source_text text;
+ALTER TABLE workflows ADD COLUMN mode text NOT NULL DEFAULT 'legacy' CHECK (mode IN ('legacy','text'));
+ALTER TABLE workflows ADD COLUMN enabled boolean NOT NULL DEFAULT false;
+ALTER TABLE workflows ADD COLUMN system_ids jsonb NOT NULL DEFAULT '[]'::jsonb CHECK (jsonb_typeof(system_ids)='array');
+ALTER TABLE workflows ADD COLUMN schedule jsonb;
+ALTER TABLE workflows ADD COLUMN planning_error text;
+ALTER TABLE workflows ADD COLUMN compiled_plan jsonb;
+CREATE UNIQUE INDEX named_backoffice_system ON connections(tenant_id,lower(name)) WHERE kind='browser' AND config->>'backoffice'='true';
+ALTER TABLE connections DROP CONSTRAINT connection_state;
+ALTER TABLE connections ADD CONSTRAINT connection_state CHECK (status IN ('setup','missing_info','awaiting_test','ready','needs_attention','disabled','login_failed'));

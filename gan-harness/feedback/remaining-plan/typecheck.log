@@ -1,0 +1,15 @@
+
+> afterhours@0.1.0 typecheck /private/tmp/afterhours-plan-verify
+> pnpm -r typecheck && pnpm typecheck:tools
+
+Scope: 3 of 4 workspace projects
+packages/core typecheck$ tsc --noEmit
+packages/core typecheck: Done
+apps/worker typecheck$ tsc --noEmit
+apps/web typecheck$ tsc --noEmit
+apps/worker typecheck: Done
+apps/web typecheck: Done
+
+> afterhours@0.1.0 typecheck:tools /private/tmp/afterhours-plan-verify
+> tsc --noEmit -p tsconfig.tools.json
+

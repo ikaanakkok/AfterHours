@@ -1,0 +1,470 @@
+[
+  {
+    "path": "/overview",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/overview",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/overview",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/overview",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/inbox",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/inbox",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/inbox",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/inbox",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/agent-operations",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/agent-operations",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/agent-operations",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/agent-operations",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/context",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/context",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/context",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/context",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/workflows",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/workflows",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/workflows",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/workflows",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/email",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/email",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/email",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/email",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/calendar",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/calendar",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/calendar",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/calendar",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/management",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/management",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/management",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/management",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/front-desk-channels",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/front-desk-channels",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/front-desk-channels",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/front-desk-channels",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/backoffice-systems",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/backoffice-systems",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/backoffice-systems",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/backoffice-systems",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/ai-providers",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/ai-providers",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/ai-providers",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/ai-providers",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/settings",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/settings",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/settings",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/settings",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/voice",
+    "width": 1440,
+    "bodyWidth": 1440,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/voice",
+    "width": 1024,
+    "bodyWidth": 1024,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/voice",
+    "width": 768,
+    "bodyWidth": 768,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  },
+  {
+    "path": "/voice",
+    "width": 390,
+    "bodyWidth": 390,
+    "smallText": [],
+    "overflow": [],
+    "font": "\"Plus Jakarta Sans Variable\", system-ui, -apple-system, sans-serif",
+    "loaded": true
+  }
+]
